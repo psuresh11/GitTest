@@ -1,0 +1,610 @@
+su - postgres
+/usr/local/pgsql/bin/postmaster -D /usr/local/pgsql/data >logfile 2>&1 &
+/usr/local/pgsql/bin/psql -U webuser -h dintelliship.engagetechnology.com aos_intelliship
+/usr/local/pgsql/bin/psql -U webuser -h 192.168.9.226 aos_intelliship
+/usr/local/pgsql/bin/psql -U postgres -h 192.168.9.226 aos_intelliship
+psql -U webuser aos_intelliship
+Byt#Yu2e
+psql -U postgres aos_intelliship
+Rdb#97Lx
+
+test@aloha.com
+=================================================================================
+command to restart server
+
+/etc/init.d/httpd graceful
+=================================================================================
+command to view log file
+tail -f /var/log/httpd/error_log
+=================================================================================
+To start database
+su postgres
+pg_ctl -D /media/pgdata/data start
+=================================================================================
+To Start intelliship server 
+perl /var/git/IntelliShip2/script/intelliship_server.pl -r
+=================================================================================
+grep -r -n '665329270060868' /var/log/httpd/error*
+grep -r -n '1Z2X39090393611394' /var/log/httpd/error*
+grep -r -n '100414562' /var/log/httpd/error*
+
+dhalo.engagetechnology.com
+dintelliship.engagetechnology.com
+=================================================================================
+SSH User:
+Username     Password
+----------------------
+ALOHA11      1qaz1qaz
+ALOHA12      1qaz2wsx
+ALOHA13      1qaz3edc
+
+su root      LX$sDEe8f
+
+Portal Login User:
+
+Fedex		test@csuc.com 					test123
+UPS			 test@test.com					test123
+DHL 		test@csuc.com					test123
+
+
+
+
+
+
+
+bol		dev 	admin@alohatest4.com	aloha123
+
+DEV USERNAME carrier-wise
+Efreight	admin@alohatest4.com			aloha123()
+FMI			test@acme.com					test123
+			testuser@varianmedical.com 		Test123
+MFW			admin@alohatest4.com 			aloha123
+			test@mfw.com					test123
+Fedex		test@csuc.com 					test123(Zebra)
+			motorola/HPCQ67					8EYFSATT2PD4N (Zebra)
+UPS			ups2@test.com					aloha123
+Motorola    jfletcher@motorolasolutions.com     1qaz@WSX
+			test@motorola.com                 test123
+			
+tuser@sprint.com   TestSprint1
+  
+*********LOCAL USERNAME carrier-wise***********
+API NAME        Username		Password
+
+FMI API      : 	test@fmi.com		test123
+EFREIGHT API : 	test@efreight.com	test123
+UPS API      : 	test@ups.com		test123
+FEDEX API    : 	test@fedex.com		test123
+MFW API      : 	test@mfw.com		test123
+				atest@qamf.com   	aloha123
+*************************************************
+
+
+
+LOCAL USERNAME carrier-wise
+Efreight 	admin@iss.com			aloha123      (bol)
+UPS			ups2@test.com			aloha123
+Fedex		fletcher@engage.com 	echase
+FMI			varian@fmitest.com		varian1234
+MFW			mfw@test.com			aloha123
+
+			ernie1/Jeff     8EYDZV54AGK58
+			ernie/import1    8EYH0WJTS6KFJ
+			
+
+============================================
+CSUC credential local
+Fedex
+
+acNo : 302018316
+meterNO : 372687
+
+UPS
+UPS2 ship manager
+acNo : 384T0T
+meterNO : 
+Web user : scturn
+Web user Psw: Five19355
+
+MRCH
+MERCU ship manager
+acNo : RR Donnelly
+meterNO : https://dlsworldwideproxy-stage.rrd.com/services/
+Web user : Lojistic
+Web user Psw: 04be059e-9f32-1507-1ece-964dab8ffacb
+
+UsPS2
+USPS2 ship manager
+acNo : 9718
+meterNO : 901638209
+Web user : 721CALIF6854
+Web user Psw: 901638211
+
+ECHO
+ECHO ship manager
+acNo : ER138999
+meterNO : Echo8999
+Web user : E138999
+Web user Psw: 85aaa5e9-ef50-4a72-ba19-70a698143fb9
+========================================================================
+
+	Username				Password
+
+acme/myorders               Demo!234		(not superuser)
+motorola/Tpctestuserint     Tpctest12		(not superuser)
+sprint/bwood                5tgb@WSX		(not superuser)
+engage/tsharp                				(superuser)
+sprint/user    				1qaz@WSX              sprintUSER1
+1000@motorolasolutions.com   1qaz@WSX
+
+**vought1/fllookup			lookupt			(Not Administrator)
+final/myorders				demo			(Not Administrator)
+**final/po					demo			(Not Administrator)
+-------------------------------------------
+Gmail Account
+
+Email: aloha.sourceconsulting@gmail.com
+Password: nBs1992@
+
+----------------------------------------------
+
+Skype Account: 
+
+Username : aloha.sourceconsulting
+Password : njdn3398
+-----------------------------------------------
+
+Aloha Portal:
+
+http://alohatechnology.basecamphq.com/login
+
+Username: imranm
+Password: imomin
+
+-------------------------------------------
+
+VPN login:
+
+Username: aloha
+Password: y70C7DSV9v
+
+-------------------------------------------
+
+VMware vSphere Client
+IP address / Name: 216.198.214.4
+Username: root
+Password: pEd3Zc8f
+
+---------------------------------------------
+generate_label
+
+/script/intelliship_generate_label.pl 8F324S9TYRKAW jpg s 0
+
+/print/label/8F321B045R2JS.jpg
+
+-------------------------------------------------
+[root@atx00web01 ~]# psql --help
+This is psql 8.3.7, the PostgreSQL interactive terminal.
+
+Usage:
+  psql [OPTIONS]... [DBNAME [USERNAME]]
+
+General options:
+  -d DBNAME       specify database name to connect to (default: "root")
+  -c COMMAND      run only single command (SQL or internal) and exit
+  -f FILENAME     execute commands from file, then exit
+  -1 ("one")      execute command file as a single transaction
+  -l              list available databases, then exit
+  -v NAME=VALUE   set psql variable NAME to VALUE
+  -X              do not read startup file (~/.psqlrc)
+  --help          show this help, then exit
+  --version       output version information, then exit
+
+Input and output options:
+  -a              echo all input from script
+  -e              echo commands sent to server
+  -E              display queries that internal commands generate
+  -q              run quietly (no messages, only query output)
+  -o FILENAME     send query results to file (or |pipe)
+  -n              disable enhanced command line editing (readline)
+  -s              single-step mode (confirm each query)
+  -S              single-line mode (end of line terminates SQL command)
+  -L FILENAME     send session log to file
+
+Output format options:
+  -A              unaligned table output mode (-P format=unaligned)
+  -H              HTML table output mode (-P format=html)
+  -t              print rows only (-P tuples_only)
+  -T TEXT         set HTML table tag attributes (width, border) (-P tableattr=)
+  -x              turn on expanded table output (-P expanded)
+  -P VAR[=ARG]    set printing option VAR to ARG (see \pset command)
+  -F STRING       set field separator (default: "|") (-P fieldsep=)
+  -R STRING       set record separator (default: newline) (-P recordsep=)
+
+Connection options:
+  -h HOSTNAME     database server host or socket directory (default: "local socket")
+  -p PORT         database server port (default: "5432")
+  -U NAME         database user name (default: "root")
+  -W              force password prompt (should happen automatically)
+
+For more information, type "\?" (for internal commands) or "\help"
+(for SQL commands) from within psql, or consult the psql section in
+the PostgreSQL documentation.
+
+Report bugs to <pgsql-bugs@postgresql.org>.
+
+
+Query for entry as superuser :
+insert into custcondata values ('SUPERUSER1234','2','0000000000002','1','superuser','1');
+
+---------------------------------
+
+Winay Sir Credentials 
+
+Basecamp: vinayc ichlerne
+
+AOL: vinay.chaudhari ichlerne
+
+GitHub: winayc aloha123
+
+
+---------------------------------
+Imran Sir Credentials 
+
+Basecamp: imranm imomin
+
+GitHub: imranm njdn3398
+
+AOL: imran_momin nBs1992@
+---------------------------------
+
+
+Halo credentials
+
+URL : dhalo.engagetechnology.com
+Username: engage/super
+Password: demo
+
+Username : engage/jfletcher
+Password : &UJM4rfv
+----------------------------------
+
+Mercury/RRD Portal credentials:
+
+https://rrd2.mercurygate.net/MercuryGate/login/mgLogin.jsp?inline=true
+Username: tsharp
+Password: cAp5epus
+
+--------------------------------------
+USPS Portal credentials:
+
+URL: https://gateway.usps.com/eAdmin/view/signin
+Username: CSUCintelliship
+Password: @Q6LWloWGTnV1X36AayYW
+
+--------------------------------------
+API Test Credentials :
+	Sprint   => Account Number : 188214380, Meter Number: 307045
+	Motorola => Account Number : 494036924, Meter Number: 253301
+
+jfletcher@zebra.com
+1qaz@WSX
+
+
+ll | grep ' Feb ' | wc -l
+
+===========================================
+SSH User:
+===========================================
+Username     Password
+----------------------
+ALOHA11      1qaz1qaz
+ALOHA12      1qaz2wsx
+ALOHA13      1qaz3edc
+
+su root      LX$sDEe8f
+
+postgres   Rdb#97Lx
+webuser    Byt#Yu2e
+
+scp /opt/engage/intelliship2/IntelliShip/lib/IntelliShip/Controller/Customer/Order.pm root@dintelliship2.engagetechnology.com:/opt/engage/intelliship2/IntelliShip/lib/IntelliShip/Controller/Customer/
+
+
+scp /opt/engage/intelliship2/IntelliShip/cron/shipment_activity_email.pl root@intelliship2.engagetechnology.com:/opt/engage/intelliship2/IntelliShip/cron/
+FedEx Support : 1-877-339-2774
+UPS Support : 1-800-247-9035
+MFW Suppor : Jared Childers (913) 905-5220, JChilders@MYFREIGHTWORLD.com  
+
+FedEx API Test Credentials 
+Sprint
+account number : 188214380, Meter Number: 307045
+
+Motorola
+Account Number: 494036924 Meter Number: 253301
+websupport@fedex.com
+
+DHL Support:
+John Riff, DHL - Integration Specialist
+1144 W. Washington St; Tempe, AZ 85281
+Desk: 480.636.2976, Cell: 480.249.4815
+John.Riff@dhl.com
+
+UPS API Test Credentials 
+
+Below and attached, are some customer
+information for UPS setups, for review;
+      UPS Customer: MultiMedia Games
+      UPS Invoice: See Attached
+      UPS Acct:	242R70
+      UPS Meter#:	0127204
+      UPS ID:	scmultimedia
+      UPS PW:	Games206
+      UPS Customer: Sprint Logistics
+      UPS Invoice: See Attached
+      UPS Acct: AW5282
+      UPS Meter#: 0123296
+      UPS ID: SprintAW5282
+      UPS PW: 2wsx!QAZ
+	  
+Login ID:	tsharp212
+Password:	Tony212!@
+Acct#: F5618Y (Old# 4878WX)
+Charges:	Personal Visa CC
+Name:	Tony Sharp
+Address:	31125 Mills Chase Dr, Lewes, DE 19958
+Phone:	302-584-1393
+eMail:	tsharp212@aol.com
+API URL:	https://www.ups.com/upsdeveloperkit?loc=en_US 
+Access Key:	7CD03B13C7D39706
+API:	Shipping (see attached)
+       This API method offers; Rating, POD, Pickup,
+       Address Validation, Labels, Transit, Tracking)
+	   
+	   
+eFreight API WSDL - http://test2.efstms.com/PublicApi/ShippingService.svc?singleWsdl
+
+/customer/order/ajax?ajax=1&type=HTML&action=generate_bill_of_lading&coid=8EYDZW3SFGHRD&shipmentid=8EYDZW40Z2UUS
+
+===========================================
+/usr/local/pgsql/bin/psql -h dintelliship.engagetechnology.com -U webuser aos_intelliship
+===========================================
+my $config_ref = {
+	BASE_PATH		=>	'/opt/engage/intelliship',
+	DB_NAME			=>	'aos_intelliship',
+	DB_HOST			=>	'localhost',
+	DB_USER			=>	'webuser',
+	DB_PASSWORD		=>	'Byt#Yu2e',
+	BASE_DOMAIN		=>	'engagetechnology.com',
+	ARRS_PATH		=>	'/opt/engage/arrs',
+	HALO_PATH		=>	'/opt/engage/halo',
+	ADMIN_USER		=>	'engage',
+	ADMIN_PASSWORD	=>	'ohila4'
+};
+===========================================
+
+cintelliship2.engagetechnology.com
+cvisionship.engagetechnology.com
+cintelliship.engagetechnology.com
+dintelliship.engagetechnology.com
+dhalo.engagetechnology.com
+
+===========================================
+port = 5432
+===========================================
+
+Mukund Potdar
+Aloha Portal
+
+User: mukundpotdar
+Password: mukund@123
+
+===========================================
+
+Winay's CentOS IP: 192.168.8.115
+root
+aloha@123
+
+===========================================
+
+I live in Delaware, near Philadeplia Pennsylvania
+
+===========================================
+Dial-in Number-1 559-546-1301
+Access Code  306260
+
+===========================================
+Aloha Portal:
+===========================================
+http://alohatechnology.basecamphq.com/login
+
+Username: imranm
+Password: imomin
+
+===========================================
+
+[root@atx00web01 ~]# psql --help
+This is psql 8.3.7, the PostgreSQL interactive terminal.
+
+Usage:
+  psql [OPTIONS]... [DBNAME [USERNAME]]
+
+General options:
+  -d DBNAME       specify database name to connect to (default: "root")
+  -c COMMAND      run only single command (SQL or internal) and exit
+  -f FILENAME     execute commands from file, then exit
+  -1 ("one")      execute command file as a single transaction
+  -l              list available databases, then exit
+  -v NAME=VALUE   set psql variable NAME to VALUE
+  -X              do not read startup file (~/.psqlrc)
+  --help          show this help, then exit
+  --version       output version information, then exit
+
+Input and output options:
+  -a              echo all input from script
+  -e              echo commands sent to server
+  -E              display queries that internal commands generate
+  -q              run quietly (no messages, only query output)
+  -o FILENAME     send query results to file (or |pipe)
+  -n              disable enhanced command line editing (readline)
+  -s              single-step mode (confirm each query)
+  -S              single-line mode (end of line terminates SQL command)
+  -L FILENAME     send session log to file
+
+Output format options:
+  -A              unaligned table output mode (-P format=unaligned)
+  -H              HTML table output mode (-P format=html)
+  -t              print rows only (-P tuples_only)
+  -T TEXT         set HTML table tag attributes (width, border) (-P tableattr=)
+  -x              turn on expanded table output (-P expanded)
+  -P VAR[=ARG]    set printing option VAR to ARG (see \pset command)
+  -F STRING       set field separator (default: "|") (-P fieldsep=)
+  -R STRING       set record separator (default: newline) (-P recordsep=)
+
+Connection options:
+  -h HOSTNAME     database server host or socket directory (default: "local socket")
+  -p PORT         database server port (default: "5432")
+  -U NAME         database user name (default: "root")
+  -W              force password prompt (should happen automatically)
+
+For more information, type "\?" (for internal commands) or "\help"
+(for SQL commands) from within psql, or consult the psql section in
+the PostgreSQL documentation.
+
+Report bugs to <pgsql-bugs@postgresql.org>.
+
+======================================================================================
+To dump a database called mydb into a SQL-script file:
+======================================================================================
+
+pg_dump -U postgres aos_intelliship > aos_intelliship_20141104.sql 
+
+pg_dump mydb > db.sql
+
+To reload such a script into a (freshly created) database named newdb:
+psql -d newdb -f db.sql
+
+To dump a database into a custom-format archive file:
+pg_dump -Fc mydb > db.dump
+
+To reload an archive file into a (freshly created) database named newdb:
+pg_restore -d newdb db.dump
+
+======================================================================================
+########## How to copy postgres database to another server ##########
+pg_dump -C -h dintelliship.engagetechnology.com -U webuser aos_intelliship | psql -h localhost -U webuser aos_intelliship
+======================================================================================
+
+script/intelliship_create.pl model MyDBI DBIC::Schema IntelliShip::SchemaClass create=static components=TimeStamp,PassphraseColumn 'dbi:Pg:dbname=aos_intelliship;host=dintelliship.engagetechnology.com;port=5432' 'webuser' 'Byt#Yu2e'
+
+======================================================================================
+
+Steps to install Catalyst Framework on dintelliship.engagetechnology.com server
+
+cpan File::Path ( IMP version 2.07) http://search.cpan.org/CPAN/authors/id/D/DL/DLAND/File-Path-2.07.tar.gz
+cpan Test::FailWarnings
+cpan Unicode::UTF8
+cpan Path::Tiny
+cpan MooseX::Getopt
+PERL_MM_USE_DEFAULT=1 cpan Catalyst::Runtime Catalyst::Devel
+======================================================================================
+pg_dump -C -h dintelliship2.engagetechnology.com -U postgres aos_intelliship | psql -h localhost -U postgres
+======================================================================================
+https://dintelliship2.engagetechnology.com/customer/order/ajax?action=generate_commercial_invoice&ajax=1&type=HTML&coid=8EY8Z21USZD94&shipmentid=8EY8Z21WPBFR3
+
+########### Winay Sir Credentials ###########
+
+Basecamp: vinayc ichlerne
+AOL: vinay.chaudhari ichlerne
+GitHub: winayc aloha123
+
+#############################################
+
+URL to download vpn client: https://www.shrew.net/download/vpn/vpn-client-2.2.2-release.exe 
+
+Username: aloha
+Password: y70C7DSV9v
+
+Tony 302-584-1393
+
+
+
+######## 
+Backup a specific postgres table
+
+$ pg_dump --table products -U geekstuff article -f onlytable.sql
+					OR
+pg_dump -U postgres -t myorderscolumnsassoc aos_intelliship > /var/git/myorderscolumnsassoc.sql
+					
+Restore postgres sql file
+
+/usr/local/pgsql/bin/psql -U postgres -h 192.168.9.226 aos_intelliship < /var/git/myorderscolumnsassoc.sql
+
+########
+
+######## COMMANDS TO CODE AND DB ARCHIVE ON PRODUCTION ########
+
+Code Archive: tar -zcvf Intelliship2_code_20160429.tar.gz IntelliShip2/
+
+tar -zcvf Intelliship2_code_20160429.tar.gz IntelliShip2/
+
+DB ARCHIVE: mkdir Intelliship_DB_20160429
+
+			pg_dump -U postgres arrs > Intelliship_DB_20160429/arrs.sql
+			pg_dump -U postgres aos_intelliship > Intelliship_DB_20160429/aos_intelliship.sql
+
+			tar -zcvf Intelliship_DB_20160429.tar.gz Intelliship_DB_20160429/
+
+			psql -U postgres arrs < /var/git/IntelliShip2/sql/arrs_2016-04-22-MP-1-USPS2-assessorials.sql
+			
+Command to UnZip
+			tar -zxvf archive.tar.gz
+			
+			
+######################################################################
+SCP command
+
+scp root@dintelliship2.engagetechnology.com:/opt/engage/intelliship2/IntelliShip/var/imported/product/qamf/FebOrderImport.tar.gz /var/git/IntelliShip2
+
+scp root@intelliship2.engagetechnology.com:/home/lbohanno/import_contacts.pl /var/git/IntelliShip2
+
+
+##### COMMAND to copy specific data from table 
+
+*** copy data from database to csv file  
+ COPY (SELECT * from contact where customerid = '8ETKCWZXZC0UY') TO '/var/git/motorola_contacts.csv';
+
+*** copy data from csv file to database 
+ COPY contact from '/var/motorola_contacts.csv';
+
+ intelliship_1756_mp
+ 
+git reset --hard
+git pull origin intelliship_1756_mp:intelliship_1756_mp
+git checkout intelliship_1756_mp
+chown -R nobody:nobody * && chmod -R 775 * && /etc/init.d/httpd graceful && dos2unix /opt/engage/intelliship2/IntelliShip/cron/*pl
+
+ 
+  
+  http://forum.xcitefun.net/samsung-secrets-codes-and-sim-lock-network-lock-removing-t1672.html
+ 
+lojistic signup link :
+https://dev.lojistic.com/shipping-software/sign-up
+
+8F7UY2PP5EEAL
+
+Dev Credentials : 
+Not a real: test@test.com - test123.
+
+Prod Credentials : 
+
+Turn 5: admin@t5.com - 9ol.!QAZ
+
+Skype : 
+aloha.sourceconsulting
+njdn3398
+
+
+
+ git reset --hard
+ git branch
+ git checkout development
